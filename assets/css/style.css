@@ -715,8 +715,9 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about-img.jpg") center center no-repeat;
-  background-size: cover;
+  /* background: url("../img/about-img.jpg") center center no-repeat; */
+  /* background: url("../img/startup\ board3.jpg") center center no-repeat; */
+  /* background-size: cover; */
   min-height: 500px;
 }
 
