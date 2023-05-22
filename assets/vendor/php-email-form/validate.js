@@ -121,8 +121,8 @@ function php_email_form_submit(thisForm, action, formData) {
   .then(data => {
     thisForm.querySelector('.loading').classList.remove('d-block');
     if (data.trim() == 'OK') {
-      // thisForm.querySelector('.sent-message').classList.add('d-block');
-      // thisForm.reset(); 
+      thisForm.querySelector('.sent-message').classList.add('d-block');
+      thisForm.reset(); 
       window.location.href = 'contact-success-page.html'; // Redirecting to the success page
     } else {
       throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
